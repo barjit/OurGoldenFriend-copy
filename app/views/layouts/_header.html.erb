@@ -1,15 +1,43 @@
+<!--
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "Our Golden Friend", root_path, id: "logo" %>
+    <%#= link_to "Our Golden Friend", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "News",                         root_path  %></li>
+        <li><#%= link_to "News",                         root_path  %></li>
         <li><#%= link_to "Management Artists",                      %></li>
         <li><#%= link_to "Label Artists",                           %></li>
-        <li><%= link_to "About Us",     static_pages_about_us_path %></li>
-        <li><%= link_to "Contact Us", static_pages_contact_us_path %></li>
-        <li><%= link_to "Shop",             static_pages_shop_path %></li>
+        <li><#%= link_to "About Us",     static_pages_about_us_path %></li>
+        <li><#%= link_to "Contact Us", static_pages_contact_us_path %></li>
+        <li><#%= link_to "Shop",             static_pages_shop_path %></li>
       </ul>
     </nav>
   </div>
 </header>
+-->
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><%= link_to "News",                         root_path  %></li>
+                    <li><#%= link_to "Management Artists",                      %></li>
+                    <li><#%= link_to "Label Artists",                           %></li>
+                    <li><%= link_to "About Us",     static_pages_about_us_path %></li>
+                    <li><%= link_to "Contact Us", static_pages_contact_us_path %></li>
+                    <li><%= link_to "Shop",             static_pages_shop_path %></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
