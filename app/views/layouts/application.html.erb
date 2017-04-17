@@ -7,13 +7,20 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blog-home.css" rel="stylesheet">
+
+
   </head>
 
   <body>
 
-  	<%= render 'layouts/header' %>
+    <%= render 'layouts/header' %>
 
     <%= yield %>
+
+    <%= render 'layouts/footer' %>
   </body>
 </html>
 
